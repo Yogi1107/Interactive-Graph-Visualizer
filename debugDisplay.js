@@ -9,7 +9,7 @@ import { elements } from './dom.js';
 export function createEdgeTable() {
   const tableHTML = `
     <div class="debug-section">
-      <h4>📊 Edge Table</h4>
+      <h4>Edge Table</h4>
       <table class="edge-table" id="edgeTable">
         <thead>
           <tr>
@@ -64,7 +64,7 @@ export function createParentArrayDisplay(initialParents) {
   
   const displayHTML = `
     <div class="debug-section">
-      <h4>🌳 Union-Find Parent Array (Kruskal's)</h4>
+      <h4>Union-Find Parent Array (Kruskal's)</h4>
       <table class="parent-table">
         <thead>
           <tr>
@@ -82,8 +82,8 @@ export function createParentArrayDisplay(initialParents) {
         </tbody>
       </table>
       <div class="array-legend">
-        <span>🔵 Initial: Each node points to itself</span>
-        <span>🟢 Updated: After union operation</span>
+        <span>Initial: Each node points to itself</span>
+        <span>Updated: After union operation</span>
       </div>
     </div>
   `;
@@ -121,7 +121,7 @@ export function createVisitedSetDisplay(sourceVertex) {
   
   const displayHTML = `
     <div class="debug-section">
-      <h4>🎯 Visited Set (Prim's)</h4>
+      <h4>Visited Set (Prim's)</h4>
       <table class="visited-table">
         <thead>
           <tr>
@@ -182,7 +182,7 @@ export function updateVisitedSet(newVertex) {
 export function createAvailableEdgesDisplay() {
   const displayHTML = `
     <div class="debug-section">
-      <h4>📋 Available Edges Queue (Prim's)</h4>
+      <h4>Available Edges Queue (Prim's)</h4>
       <table class="queue-table" id="queueTable">
         <thead>
           <tr>
@@ -225,7 +225,7 @@ export function updateAvailableEdgesQueue(edgesAvailable) {
           <td>${i + 1}</td>
           <td>${edge.u}-${edge.v}</td>
           <td>${edge.w}</td>
-          <td>${i === 0 ? '👉 Next' : 'Waiting'}</td>
+          <td>${i === 0 ? 'Next' : 'Waiting'}</td>
         </tr>
       `).join('');
     }
@@ -241,7 +241,7 @@ export function updateAvailableEdgesQueue(edgesAvailable) {
 export function createCostTracker() {
   const displayHTML = `
     <div class="debug-section">
-      <h4>💰 MST Cost Tracker</h4>
+      <h4>MST Cost Tracker</h4>
       <div class="cost-display">
         <div class="cost-value" id="currentCost">0</div>
         <div class="cost-label">Current Total Cost</div>
@@ -298,7 +298,7 @@ export function initializeDebugPanel() {
   }
   
   debugPanel.innerHTML = `
-    <h3>📊 Data Structure Visualization</h3>
+    <h3>Data Structure Visualization</h3>
     <div id="debugContent">
       <p class="debug-placeholder">Run an algorithm to see data structures...</p>
     </div>
